@@ -1,0 +1,4 @@
+/* brand font, legacy formats */
+@font-face { font-family: Brand; src: url(../fonts/brand.woff) format("woff"), url(../fonts/brand.ttf) format("truetype"); }
+@font-face { font-family: Brand; src: url(../fonts/light.woff2) format("woff2"); font-weight: 300; font-display: block; }
+@font-face { font-family: "Old Display"; src: url(../fonts/old.woff2) format("woff2"); font-display: swap; }

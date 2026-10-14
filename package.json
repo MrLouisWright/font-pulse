@@ -1,0 +1,54 @@
+{
+  "name": "font-pulse",
+  "version": "1.0.0",
+  "description": "Audit web font loading in a built static site: font-display, preload with crossorigin, unused preloads, WOFF2, heavy or unsubset fonts, unicode-range, unused faces and weights, per-page font payload, Google Fonts display=swap and preconnect. SARIF, GitHub Action. Zero deps.",
+  "type": "module",
+  "main": "./src/index.js",
+  "types": "./src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "default": "./src/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "bin": {
+    "font-pulse": "bin/font-pulse.js"
+  },
+  "files": [
+    "src",
+    "bin",
+    "action.yml",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.js"
+  },
+  "keywords": [
+    "fonts",
+    "web-fonts",
+    "font-display",
+    "woff2",
+    "performance",
+    "cls",
+    "core-web-vitals",
+    "static-site",
+    "sarif",
+    "github-action"
+  ],
+  "author": "Louis Wright <hello@louiswright.co.uk> (https://github.com/MrLouisWright)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrLouisWright/font-pulse.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MrLouisWright/font-pulse/issues"
+  },
+  "homepage": "https://github.com/MrLouisWright/font-pulse#readme"
+}
