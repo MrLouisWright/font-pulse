@@ -1,5 +1,7 @@
 # font-pulse
 
+[![npm version](https://img.shields.io/npm/v/font-pulse.svg)](https://www.npmjs.com/package/font-pulse) [![CI](https://github.com/MrLouisWright/font-pulse/actions/workflows/ci.yml/badge.svg)](https://github.com/MrLouisWright/font-pulse/actions/workflows/ci.yml) [![Node](https://img.shields.io/node/v/font-pulse.svg)](https://nodejs.org) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 > Audit how your built site loads web fonts: font-display, preloads, WOFF2, subsetting, unused weights and total font payload.
 
 Web fonts are a quiet source of slow text and layout shift: a missing `font-display` hides text for up to three seconds, a preload without `crossorigin` downloads the font twice, and a design system that ships nine weights when the pages use two costs hundreds of kilobytes. `font-pulse` reads the HTML and CSS in your static build output, follows linked stylesheets and `@import`, and checks every `@font-face` against how the site actually uses it.
