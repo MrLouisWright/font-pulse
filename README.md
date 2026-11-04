@@ -170,11 +170,19 @@ The action runs the bundled CLI with Node 20; it has no dependencies to install.
 
 ## Library
 
+Install it in your project first:
+
+```bash
+npm install --save-dev font-pulse
+```
+
 ```js
 import { check, parseCss } from "font-pulse";
 parseCss("@font-face{font-family:Inter;src:url(i.woff2) format('woff2')}").faces;
 const report = check("dist", { maxPayload: 200 * 1024 });
 ```
+
+The package is ESM-only (there is no CommonJS build): use `import`, or `await import("font-pulse")` from CommonJS.
 
 Types are included.
 
